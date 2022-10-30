@@ -1,23 +1,36 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Island+Moments&family=Lato:ital,wght@0,100;0,300;0,700;1,100;1,700&family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Passion+One:wght@700&family=Sriracha&display=swap');
+:root{
+    --fonte1:  Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive
+}
 *{
     margin: 0px;
     padding: 0px;
+    
 }
 html, body{
     min-height: 100vh;
     background-color: darkgray;
+    font-weight: var(--fonte1);
 }
 header{
     background-color: black;
     color: white;
     text-align: center;
+    background-attachment: fixed;
 }
 header h1{
-    padding: 50px;
+    padding: 30px;
     font-variant: small-caps;
+    font-family: 'Sriracha', cursive;
+    font-size: 4vw;
+    background-attachment: fixed;
 }
 header p{
-    padding-bottom: 50px;
+    padding-bottom: 20px;
+    background-attachment: fixed;
 }
 a{
     color: white;
@@ -29,23 +42,47 @@ a:hover{
     color: greenyellow;
     transition: 2s;
 }
+p{
+    margin: auto;
+}
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 2em;
+    line-height: 1em;
     padding-left: 10px;
+    font-family: var(--fonte3);
+    font-size: 2.5vw;
+    
+}
+section > p{
+    padding: 1em;
 }
 section.normal{
     background-color: white;
 }
 section.image p{
-    background-color: rgb(27, 25, 25);
-    width: 400px;
+    background-color: rgba(12, 11, 11, 0.589);
+    display: inline-block;
     border-radius: 2px;
+    padding: 5px;
+    box-shadow: 1px 1px 0px black;
 }
 section.image{
-    background-color: rgb(48, 39, 39);
+    background-color: rgba(80, 63, 63, 0.322);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.575);
+    background-attachment: fixed;
+}
+section#image01{
+background-image: url('imagens/background001.jpg');
+background-position: right center;
+background-size: cover;
+
+}
+section#image02{
+background-image: url('imagens/background002.jpg');
+background-size: cover;
+
 }
 footer{
     background-color: black;
